@@ -1,0 +1,102 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+
+body{
+    width:100%;
+    height:100vh;
+}
+.loading-wrapper{
+    position:fixed;
+    display:flex;
+    flex-direction:column;
+    width:100%;
+    height:100vh;
+    align-items:center;
+    justify-content:center;
+    opacity:1;
+    background:url('../Img/dirt_pattern2.jpg') no-repeat;
+    background-size:cover;
+    transition:all 250ms ease-out;
+    z-index:9999;
+}
+#loading-Img{
+height:500px;
+width:500px;
+}
+#loading-txt{
+    color:white;
+    font-size:24px;
+    font-style:italic;
+}
+article{
+    position:absolute;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    margin:auto 0;
+    inset:0;
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    max-height:500px;
+    background-color:rgb(11, 78, 11);
+}
+.auto__carousel-container{
+position:relative;
+background-color:green;
+box-shadow: 2px 5px 20px  black;
+height:80%;
+width:50%;
+display:flex;
+flex-direction:column;
+}
+.carousel-items{
+    position:relative;
+    width:100%;
+    height:100%;
+    position:relative;
+    display:flex;
+}
+.image__carousel{
+    position:absolute;
+    display:flex;
+    inset:0;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:none;
+}
+.dots__container{
+display:flex;
+align-items:center;
+flex-direction:row;
+justify-content:center;
+position:absolute;
+bottom:0;
+width:100%;
+background-color:rgba(156, 133, 1, 0.5);
+height:50px;
+gap:10px;
+}
+.dot{
+    border-radius:50%;
+    background-color:rgb(247, 0, 255);
+    opacity:0.5;
+    width:15px;
+    height:15px;
+    transition:all 250ms ease-in-out;
+}
+.active__img{
+    display:flex;
+    width:100%;
+    height:100%;
+}
+.current__dot{
+    opacity:1;
+    width:20px;
+    height:20px;
+}
